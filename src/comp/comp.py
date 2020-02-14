@@ -1,5 +1,7 @@
 # The following list comprehension exercises will make use of the 
-# defined Human class. 
+# defined Human class.
+
+
 class Human:
     def __init__(self, name, age):
         self.name = name
@@ -21,20 +23,6 @@ humans = [
     Human("David", 31),
 ]
 
-# print(help(humans))
-
-# print(humans[0])
-# human1 = str(humans[0])
-# human3 = str(humans[0])[8]
-# human2 = human1[8]
-# print(human3)
-print(str(humans).split()[2][0:2])
-
-# for human in humans:
-#     print(str(human).split())
-#
-# for human in humans:
-#     print(str(human).split()[1][-2])
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
@@ -84,3 +72,20 @@ print("Square root of ages:")
 import math
 h = [math.sqrt(int(str(human).split()[2][0:2])) for human in humans]
 print(h)
+
+
+# BELOW IS THE SCRATCH WORK
+# print(help(humans))
+
+# print(humans[0])
+# human1 = str(humans[0])
+# human3 = str(humans[0])[8]
+# human2 = human1[8]
+# print(human3)
+# print(str(humans).split()[2][0:2])
+
+# for human in humans:
+#     print(str(human).split())
+#
+# for human in humans:
+#     print(str(human).split()[1][-2])
